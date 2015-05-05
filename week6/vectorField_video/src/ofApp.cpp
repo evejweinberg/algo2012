@@ -49,7 +49,7 @@ void ofApp::update(){
 	bool bNewFrame = false;
 	
 	#ifdef _USE_LIVE_VIDEO
-		vidGrabber.grabFrame();
+		vidGrabber.grabFrame(); // There is an error here 'No member named 'grabFrame' in 'ofVideGrabber'
 		bNewFrame = vidGrabber.isFrameNew();
 	#else
 		vidPlayer.idleMovie();
